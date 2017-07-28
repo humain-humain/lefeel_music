@@ -1,6 +1,6 @@
 /* ----------------------------------------------------------------------------------------------------
  * LeFeel (music version), 2017
- * Update: 12/07/17
+ * Update: 28/07/17
  * 
  * V1.02
  * Written by Bastien DIDIER
@@ -12,7 +12,7 @@
 import processing.serial.*; //Import the library
 import themidibus.*;
 MidiBus MidiBus; // The MidiBus
-float map_note;
+float map_note, velocity;
 
 Serial arduino;
 String val;
@@ -20,9 +20,6 @@ String[] pos;
 String device_port = "/dev/cu.usbmodem1421";
 
 boolean mouseControler = false;
-
-float posX = 0;
-float posY = 0;
 
 int touch, touch_note, touch_velocity;
 boolean statut_touch;
@@ -50,22 +47,21 @@ void draw(){
   
   if(mouseControler == false){
     map_serial(arduino);
+    velocity = map(touch_velocity, 0,11, 10,100);
+    map_note = map(touch_note, 0,11, 0,127);
   } else {
     //TODO if no device debug with mouse
-    posX = pmouseX;
-    posY = pmouseY;
+    velocity = map(pmouseY, 0,height, 10,100);
+    map_note = map(pmouseX, 0,width, 0,127);
+    
   }
-
-  int velocity = touch_velocity*10000;
-  map_note = map(touch_note, 0,11, 0,127);
-  
-  println(velocity);
+  println(map_note);
   
   if(statut_touch == true && noteIsPlaying == false){
-    MidiBus.sendNoteOn(0, int(map_note), velocity);
+    MidiBus.sendNoteOn(0, int(map_note), int(velocity));
     noteIsPlaying = true;
   } else if (statut_touch == false && noteIsPlaying == true){
-    MidiBus.sendNoteOff(0, int(map_note), velocity);
+    MidiBus.sendNoteOff(0, int(map_note), int(velocity));
     noteIsPlaying = false;
   }  
 }
@@ -100,5 +96,17 @@ void map_serial(Serial serial){
   }
   catch (Exception e) {
    println("Setup data incoming : Ignoring…");
+  }
+}
+
+void mousePressed(){
+  if(mouseControler == true){
+    statut_touch = true;
+  }
+}
+
+void mouseReleased(){
+  if(mouseControler == true){
+    statut_touch = false;
   }
 }
