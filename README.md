@@ -1,5 +1,5 @@
 ## lefeel Music
-####Textile device used to create midi note
+**Textile device used to create midi note**
 
 ###### Description
 
