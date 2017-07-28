@@ -1,4 +1,4 @@
-# lefeel_music
+## lefeel Music
 ####Textile device used to create midi note
 
 ###### Description
@@ -8,9 +8,9 @@ We devellop a special application to make some music with our textile device
 
 ###### Credit
 
-- Concept and Design : Humain–Humain
-- Development : Bastien Didier
+- Concept and Design : Humain–Humain (Lucile CROSETTI, Amélie SOUTSAMRAN, Amandine HENAFF, Bastien DIDIER)
+- Development : Bastien DIDIER
 
 ###### Gallery
 
-[lefeel prototype](docs/img/lefeel.gif)
+![lefeel prototype](docs/img/lefeel.gif)
