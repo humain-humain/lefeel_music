@@ -204,11 +204,35 @@ Résultat :
 
 #### Faire du textile un controller Midi
 
-étape 1 :
+#####Création d’un bus Midi
+
 http://one-billion-cat.com/documentation_midi
 
-étape 2 :
+#####Configuration de processing
 
+Installez la librairie "themidibus" dans votre dossier processing/libraries/
+
+Lancez le sketch processing et modifiez la chaîne de caractères "device_port" pour qu'elle corresponde au port où est connecté l'Arduino.
+
+```
+String device_port = "/dev/cu.usbmodem1421";
+```
+
+![Configuration de processing](img/tuto/processing.png)
+
+#####Configuration de GarageBand
+
+Sur GarageBand, créez un nouveau projet, en choisissant collection de claviers.
+
+![Configuration de garageBand](img/tuto/setup_garageband.png)
+
+Sur la première piste, devrait être affiché le " Steinway Grand Piano ", un piano classique parfait pour tester le prototype. 
+
+Sélectionnez cette piste et revenez sur processing.
+
+![Configuration de la piste](img/tuto/track_garageband.png)
+
+Assurez-vous que l'Arduino est connecté à l'ordinateur sur le bon port, lancez le sketch processing et jouez !
 
 ### ALLER PLUS LOIN
 
