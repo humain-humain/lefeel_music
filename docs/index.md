@@ -4,13 +4,13 @@
 ## Comment fabriquer un controller midi en Textile
 
 
-##### Le matériel dont vous aurez besoin :
+#### Le matériel dont vous aurez besoin :
 
-Composants :
+Liste de composants :
 
 * 1x Arduino Uno
 * 1x Usb cable type B
-* 1x Scotch conducteur (~ 8m)
+* 1x [Scotch conducteur](https://www.adafruit.com/product/1128) (~ 8m)
 * 2x Tissu en coton (35x35cm)
 * 1x [Velostat](https://www.adafruit.com/product/1361) (30x30cm)
 * 2x [Adafruit MPR121](https://www.adafruit.com/product/1982) (12 Cap Touch breakout boards)
@@ -30,15 +30,16 @@ Outils :
 
 ### FABRIQUER LE TEXTILE
 
-##### Préparer le textile
+#### Préparer le textile
 
 Dans un tissu, découpez deux carrés de 35 x 35 cm.
+
 Puis coupez 24 bandes de scotch de cuivre de 30 cm chacune.
 
 ![Préparer le textile](img/tuto/TUTO-lefeel_2.jpg)
 ![Préparer le textile](img/tuto/TUTO-lefeel_3.jpg)
 
-##### Axe X
+#### Axe X
 
 Sur le premier textile, collez horizontalement 12 bandes de scotch de cuivre de 30 cm espacées chacune d’un centimètre en commençant par le milieu.
 
@@ -47,9 +48,10 @@ Sur le premier textile, collez horizontalement 12 bandes de scotch de cuivre de 
 ![Axe X](img/tuto/TUTO-lefeel_6.jpg)
 
 Résultat :
+
 ![Axe X](img/tuto/TUTO-lefeel_7.jpg)
 
-##### Axe Y
+#### Axe Y
 
 Faites de même sur l’autre textile en orientant cette fois les bandes de cuivre verticalement.
 
@@ -57,32 +59,38 @@ Faites de même sur l’autre textile en orientant cette fois les bandes de cuiv
 ![Axe X](img/tuto/TUTO-lefeel_9.jpg)
 
 Résultat :
+
 ![Axe X et Axe Y](img/tuto/TUTO-lefeel_10.jpg)
 
 ### SOUDER LE TEXTILE AUX CAPTEURS
 
-##### Souder des câbles aux textiles
+#### Souder des câbles aux textiles
 
 Prenez 12 fils d’environ 30 cm et dénudez les à l’aide de la pince.
+
 ![Dénudez les files](img/tuto/TUTO-lefeel_12.jpg)
 
 Étamez chaque fil pour faciliter la soudure sur les bandes de cuivre.
+
 ![Étamez les fils](img/tuto/TUTO-lefeel_13.jpg)
 
 Puis, étamez chaque bande de cuivre d’un seul côté.
+
 ![Étamez les bandes de cuivre](img/tuto/TUTO-lefeel_16.jpg)
 ![Étamez les bandes de cuivre](img/tuto/TUTO-lefeel_17.jpg)
 
 Enfin, soudez les fils sur les bandes de cuivre.
+
 ![Soudez les fils](img/tuto/TUTO-lefeel_20.jpg)
 ![Soudez les fils](img/tuto/TUTO-lefeel_21.jpg)
 
-Résultat
+Résultat :
+
 ![Les câbles soudés au textile](img/tuto/TUTO-lefeel_22.jpg)
 
 **Répétez l’opération sur le deuxième tissu.**
 
-##### Assembler les Axes aux capteurs capacitifs
+#### Assembler les Axes aux capteurs capacitifs
 
 Soudez les rangées de l’Axe X à la partie de la carte électronique correspondante en faisant attention à l’ordre des fils. Le premier câble sur la pin 0 et ainsi de suite jusqu’à la pin 11.
 
@@ -92,16 +100,16 @@ Soudez les rangées de l’Axe X à la partie de la carte électronique correspo
 
 ### RELIER LES CAPTEURS À L’ARDUINO
 
-##### SDA/SCL
+#### SDA/SCL
 
 Il faut maintenant relier les capteurs entre eux puis à la carte électronique.
 
 4 pins seront utiles :
 
-SCL : Serial Clock pin, utilisée pour horodater les données du capteurs
-SDA : Serial Data, pin utilisée pour faire transiter les données
-GND : Ground, la masse pour fermer le circuit
-VIN : Tension en entrée utilisée pour alimenter le capteur
+* SCL : Serial Clock pin, utilisée pour horodater les données du capteurs
+* SDA : Serial Data, pin utilisée pour faire transiter les données
+* GND : Ground, la masse pour fermer le circuit
+* VIN : Tension en entrée utilisée pour alimenter le capteur
 
 ![Souder des câbles aux pin capteurs capacitifs](img/tuto/TUTO-lefeel_24.jpg)
 
@@ -116,7 +124,7 @@ Avant de souder les câbles de l’Axe Y dans les pins de l’Axe X, ajoutez un 
 
 ![Doublez les câbles du capteur de l'Axe X](img/tuto/TUTO-lefeel_28.jpg)
 
-##### Adressage des capteurs
+#### Adressage des capteurs
 
 Pour que la carte Arduino différencie les deux capteurs, il faut que leurs adresses soient différentes.
 
@@ -141,7 +149,7 @@ Résultat :
 
 ![Schema câblage lefeel](img/tuto/wiring_lefeel.png)
 
-##### Connexion à l’Arduino
+#### Connexion à l’Arduino
 
 Branchez le câble qui vient de la pin SCL sur la Pin A5 de l’arduino puis la pin SDA sur la Pin A4 de l’arduino.
 
@@ -153,7 +161,8 @@ Enfin connectez la pin VIN du capteur sur la pin 5v de l’arduino qui alimenter
 
 ### PROGRAMMER L’ARDUINO
 
-Les sources du programme peuvent être téléchargées ici > https://github.com/humain-humain/lefeel
+Les sources du programme peuvent être téléchargées ici >
+[https://github.com/humain-humain/lefeel](https://github.com/humain-humain/lefeel)
 
 Le programme arduino utilise une librairie pour faire fonctionner les capteurs capacitifs MPR121, la première étape est donc de les installer. 
 
@@ -164,7 +173,7 @@ Des explications sur le programme sont données directement dans le code Arduino
 
 ### VISUALISER LE TEXTILE SUR UN ORDINATEUR
 
-##### Finaliser le prototype
+#### Finaliser le prototype
 
 Ajoutez la feuille de velostat entre les deux tissus.
 
@@ -176,4 +185,10 @@ Placez le velostat et enfin mettez l’Axe Y par dessus les bandes de cuivre ori
 ![Prototype terminé](img/tuto/TUTO-lefeel_32.jpg)
 
 Résultat :
+
 ![Visualiser le textile sur l'ordinateur](img/lefeel.gif)
+
+#### Faire du textile un controller Midi
+
+
+### ALLER PLUS LOIN
