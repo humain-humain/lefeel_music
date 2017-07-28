@@ -1,9 +1,7 @@
-# Change in the Adafruit MPR121 librarie
+# Change in the Adafruit MPR121 library
 
 
-In the file *Adafruit_MPR121.cpp*
-
-we change the following lines :
+In the file **Adafruit_MPR121.cpp**, we change the following lines :
 
 * [line 63]
 ```
