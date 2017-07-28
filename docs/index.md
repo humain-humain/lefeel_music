@@ -204,11 +204,11 @@ Résultat :
 
 #### Faire du textile un controller Midi
 
-#####Création d’un bus Midi
+##### Création d’un bus Midi
 
 http://one-billion-cat.com/documentation_midi
 
-#####Configuration de processing
+##### Configuration de processing
 
 Installez la librairie "themidibus" dans votre dossier processing/libraries/
 
@@ -220,7 +220,7 @@ String device_port = "/dev/cu.usbmodem1421";
 
 ![Configuration de processing](img/tuto/processing.png)
 
-#####Configuration de GarageBand
+##### Configuration de GarageBand
 
 Sur GarageBand, créez un nouveau projet, en choisissant collection de claviers.
 
