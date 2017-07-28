@@ -4,7 +4,7 @@
  * 
  * V1.02
  * Written by Bastien DIDIER
- * more info : http://one-billion-cat.github.com/Humain-Humain/
+ * more info : https://github.com/humain-humain/lefeel_music
  *
  * ----------------------------------------------------------------------------------------------------
  */ 
