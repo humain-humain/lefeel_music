@@ -1,12 +1,26 @@
 # LeFeel Music
 
 
+Le téléphone mobile est le témoin de nos vies numériques. Capable de capter nos données comportementales, il les traite et les transforme en informations. Et si des textiles pouvaient jouer le même rôle ?
+
+Suivez ce tutoriel pour fabriquer un textile qui capte la pression du toucher et la transforme en musique.
+
+Le tissu mis au point est inspiré des recherches du collectif Humain–Humain. Il permet à un couple éloigné géographiquement d'entretenir un lien physique à distance. Il est capable de capter et retranscrire une caresse. L'objet permet d’apporter de l’affection n’importe où et n’importe quand.
+
+Plusieurs applications sont possibles. Le textile peut servir à détecter les comportements des usagers à sa surface (par exemple : une personne qui le manipule, qui tombe ou qui marche dessus). Il peut aussi être disposé à divers endroits pour en modifier son usage (par exemple : sur un siège, un lit, l'arrière d'un sac à dos).
+
+A vous de voir quel usage vous souhaitez en faire !
+
+Il s'agit d'un tutoriel de niveau 2 présupposant que vous avez des connaissances pour installer des librairies et uploader du code sur les logiciels Arduino et Processing. Savoir souder et des notions en programmation sont un plus.
+
+Vous avez maintenant toutes les informations afin de vous lancer dans ce tutoriel, à vous de jouer !
+
+
 ## Comment fabriquer un controller midi en Textile
 
+#### Matériel
 
-#### Le matériel dont vous aurez besoin :
-
-Liste de composants :
+Liste des composants :
 
 * 1x Arduino Uno
 * 1x Usb cable type B
@@ -130,10 +144,10 @@ Pour que la carte Arduino différencie les deux capteurs, il faut que leurs adre
 
 Il y a quatre façons d’adresser les capteurs en changeant la valeur de la pin ADDR :
 
-* 1 - en ne lui branchant aucun câble, la pin aura l’adresse 0x5A
-* 2 - en lui connectant la Pin 3vo, son adresse sera 0x5B
-* 3 - en lui branchant la pin SDA, son adresse sera 0x5C
-* 4 - en lui connectant la pin SCL, son adresse sera 0x5D
+1. en ne lui branchant aucun câble, la pin aura l’adresse 0x5A
+2. en lui connectant la Pin 3vo, son adresse sera 0x5B
+3. en lui branchant la pin SDA, son adresse sera 0x5C
+4. en lui connectant la pin SCL, son adresse sera 0x5D
 
 ![Adressage du MPR121](img/tuto/addr_mpr121.png)
 
@@ -190,5 +204,28 @@ Résultat :
 
 #### Faire du textile un controller Midi
 
+étape 1 :
+http://one-billion-cat.com/documentation_midi
+
+étape 2 :
+
 
 ### ALLER PLUS LOIN
+
+Maintenant que la surface sensible est créée, elle peut servir dans diverses applications :
+
+* Interagir avec différents appareils numériques comme dans le [projet Jacquard](https://atap.google.com/jacquard/) de Google
+* Capter des positions comme sur la [matrice resistive](https://etextile.github.io/resistiveMatrix/) du designer Maurin Donneaud,
+* Analyser une posture selon la pression exercée ou servir de podomètre dans le cadre du projet [TexiSense](http://www.texisense.com/capteur_en).
+
+Le textile pourrait disposer de capteurs supplémentaires sur chaque axe grâce à un [Multiplexeur](https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout/overview), lui permettant d'avoir 64 capteurs sur une seule carte arduino. Les électrodes en scotch de cuivre peuvent aussi être remplacées par d'autres matériaux conducteurs comme du [fil d'argent](https://www.adafruit.com/product/641) ou du [graphène](https://www.adafruit.com/product/1309) pour un textile transparent. La taille de la surface textile peut aussi varier.
+
+Enfin, le dispositif présenté dans ce tutoriel est un capteur. Il lui a été branché un controller midi mais il est possible de varier la retransmission :
+
+* Les Touchés sur le textile, pourraient être envoyés via le réseau pour activer un dispositif à l'autre bout du monde,
+* Le contact avec le tissu pourrait être analysé pour en déduire les comportements des utilisateurs,
+* Les touchés sur la surface pourraient être transformés en clavier ou en souris d'ordianteur.
+
+Voilà quelques interactions qui seraient envisageables avec ce textile sensible mais de nombreuses autres sont possibles. 
+
+En espérant que ce guide vous ai plu. N'hésitez pas à partager vos réussites et les nouveaux usages du textile sur les réseaux avec hashtag [#lefeel](https://twitter.com/search?f=tweets&vertical=default&q=%23lefeel&src=typd) et [@Le3eLieu](https://twitter.com/Le3eLieu).
