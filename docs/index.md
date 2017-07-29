@@ -206,7 +206,7 @@ Résultat :
 
 ##### Création d’un bus Midi
 
-http://one-billion-cat.com/documentation_midi
+[http://one-billion-cat.com/documentation_midi](http://one-billion-cat.com/documentation_midi)
 
 ##### Configuration de processing
 
@@ -252,4 +252,4 @@ Enfin, le dispositif présenté dans ce tutoriel est un capteur. Il lui a été 
 
 Voilà quelques interactions qui seraient envisageables avec ce textile sensible mais de nombreuses autres sont possibles. 
 
-En espérant que ce guide vous ai plu. N'hésitez pas à partager vos réussites et les nouveaux usages du textile sur les réseaux avec hashtag [#lefeel](https://twitter.com/search?f=tweets&vertical=default&q=%23lefeel&src=typd) et [@Le3eLieu](https://twitter.com/Le3eLieu).
+En espérant que ce guide vous ai plu. N'hésitez pas à partager vos réussites et les nouveaux usages du textile sur les réseaux avec le hashtag [#lefeel](https://twitter.com/search?f=tweets&vertical=default&q=%23lefeel&src=typd) et [@Le3eLieu](https://twitter.com/Le3eLieu).
