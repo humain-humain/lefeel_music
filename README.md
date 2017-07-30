@@ -4,7 +4,7 @@
 ###### Description
 
 Lefeel is a research project of teleportation of the touch through a portable textile surface.
-We devellop a special application to make some music with our textile device
+We develop a special application to make some music with our textile device
 
 ###### Credit
 

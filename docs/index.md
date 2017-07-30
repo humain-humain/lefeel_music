@@ -11,7 +11,7 @@ Plusieurs applications sont possibles. Le textile peut servir à détecter les c
 
 A vous de voir quel usage vous souhaitez en faire !
 
-Il s'agit d'un tutoriel de niveau 2 présupposant que vous avez des connaissances pour installer des librairies et uploader du code sur les logiciels Arduino et Processing. Savoir souder et des notions en programmation sont un plus.
+Il s'agit d'un tutoriel présupposant que vous avez des connaissances pour installer des librairies et uploader du code sur les logiciels Arduino et Processing. Savoir souder et des notions en programmation sont un plus.
 
 Vous avez maintenant toutes les informations afin de vous lancer dans ce tutoriel, à vous de jouer !
 
