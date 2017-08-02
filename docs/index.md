@@ -26,7 +26,7 @@ Liste des composants :
 * 1x Usb cable type B
 * 1x [Scotch conducteur](https://www.adafruit.com/product/1128) (~ 8m)
 * 2x Tissu en coton (35x35cm)
-* 1x [Velostat](https://www.adafruit.com/product/1361) (30x30cm)
+* 1x [Velostat](https://www.adafruit.com/product/1361) (30x30 cm)
 * 2x [Adafruit MPR121](https://www.adafruit.com/product/1982) (12 Cap Touch breakout boards)
 * Câbles (~ 5m)
 
@@ -127,7 +127,7 @@ Il faut maintenant relier les capteurs entre eux puis à la carte électronique.
 
 ![Souder des câbles aux pin capteurs capacitifs](img/tuto/TUTO-lefeel_24.jpg)
 
-Sur le capteur de l’Axe Y, soudez un câble d’une longueur de 30 cm sur chacune des pins SCL, SDA, GND et VIN. Chaque câble se connectera au capteur de l'Axe X sur la pin correspondante. 
+Sur le capteur de l’Axe Y, soudez un câble d’une longueur de 50 cm sur chacune des pins SCL, SDA, GND et VIN. Chaque câble se connectera au capteur de l'Axe X sur la pin correspondante. 
 
 Avant de souder les câbles de l’Axe Y dans les pins de l’Axe X, ajoutez un nouveau câble par pin, de façon à les doubler comme sur la photo. Ces nouveaux câbles se connecteront à l’Arduino.
 
@@ -182,6 +182,8 @@ Le programme arduino utilise une librairie pour faire fonctionner les capteurs c
 
 Après avoir redémarré arduino, chargez le code dans la carte.
 Des explications sur le programme sont données directement dans le code Arduino.
+
+Le programme tourne à 115200 bauds au lieu des 9600 habituels faites attention si vous lancez votre console à modifier se paramètre.
 
 ![Télécharger le programme sur github](img/tuto/github_lefeel.png)
 

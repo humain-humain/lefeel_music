@@ -24,9 +24,6 @@ uint16_t currtouchedROW = 0;
 uint16_t lasttouchedCOL = 0;
 uint16_t currtouchedCOL = 0;
 
-//String PosX = "0";
-//String PosY = "0";
-
 void setup() {
   Serial.begin(115200);
 
