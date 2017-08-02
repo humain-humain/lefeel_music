@@ -176,7 +176,7 @@ Enfin connectez la pin VIN du capteur sur la pin 5v de l’arduino qui alimenter
 ### PROGRAMMER L’ARDUINO
 
 Les sources du programme peuvent être téléchargées ici >
-[https://github.com/humain-humain/lefeel](https://github.com/humain-humain/lefeel)
+[https://github.com/humain-humain/lefeel_music](https://github.com/humain-humain/lefeel_music)
 
 Le programme arduino utilise une librairie pour faire fonctionner les capteurs capacitifs MPR121, la première étape est donc de les installer. 
 

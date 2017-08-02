@@ -4,7 +4,7 @@
  * 
  * V1.05
  * Written by Bastien DIDIER
- * more info : https://github.com/humain-humain/lefeel
+ * more info : https://github.com/humain-humain/lefeel_music
  *
  * ----------------------------------------------------------------------------------------------------
  */ 
